@@ -1,0 +1,31 @@
+{
+  "name": "aoba-xl",
+  "version": "1.0.0",
+  "description": "XLSX file management library",
+  "homepage": "https://github.com/jchirayil/aoba-xl",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "ci": "npm run build && npm run check-format",
+    "format": "prettier --write .",
+    "check-format": "prettier --check ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jchirayil/aoba-xl.git"
+  },
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/jchirayil/aoba-xl/issues"
+  },
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  },
+  "main": "dist/index.js"
+}
