@@ -1,6 +1,6 @@
 {
   "name": "aoba-xl",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "XLSX file management library",
   "homepage": "https://github.com/jchirayil/aoba-xl",
   "scripts": {
@@ -8,10 +8,13 @@
     "build": "tsc",
     "ci": "npm run build && npm run check-format",
     "format": "prettier --write .",
-    "check-format": "prettier --check ."
+    "check-format": "prettier --check .",
+    "typeCheck": "tsc --noEmit",
+    "local-release": "changeset version && changeset publish",
+    "prepublishOnly": "npm run ci"
   },
   "keywords": [],
-  "author": "",
+  "author": "Jacob Chirayil <jacob.chirayil@gmail.com>",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -25,6 +28,7 @@
     "url": "https://github.com/jchirayil/aoba-xl/issues"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.27.9",
     "prettier": "^3.3.3"
   },
   "main": "dist/index.js"
